@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Files</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="sales_file">Sales File:</label>
+            <input type="file" name="sales_file" id="sales_file" required><br><br>
+            
+            <label for="pricing_file">Pricing File:</label>
+            <input type="file" name="pricing_file" id="pricing_file" required><br><br>
+            
+            <label for="repo_file">Repo File:</label>
+            <input type="file" name="repo_file" id="repo_file" required><br><br>
+            
+            <input type="submit" value="Process Files">
+        </form>
+    </div>
+</body>
+</html>

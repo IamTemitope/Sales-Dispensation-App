@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/download.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Download Processed Data</h1>
+        <form method="POST" action="{{ url_for('download') }}">
+            <button type="submit">Download</button>
+        </form>
+    </div>
+</body>
+</html>
